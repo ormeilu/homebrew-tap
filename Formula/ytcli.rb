@@ -6,30 +6,30 @@ class Ytcli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.2.0/ytcli-aarch64-apple-darwin.tar.gz"
-      sha256 "16fd6a1042edd28fd4b879fea4bc05d516231669fc895611b660bf0e9695fd4b"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.3.0/ytcli-aarch64-apple-darwin.tar.gz"
+      sha256 "e8c8359947049afd04cf786362d5553ba60be21032191a01ae5e84feee508df9"
     end
     on_intel do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.2.0/ytcli-x86_64-apple-darwin.tar.gz"
-      sha256 "2d1f24c1b8e906c917e6d4e08a4c2c2a2a3a158bd6d36e5f94f2e174fa67e4a2"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.3.0/ytcli-x86_64-apple-darwin.tar.gz"
+      sha256 "a45213571c81277b00576974258909c22ac5d34373a91b20232aeae12186bf53"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.2.0/ytcli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "341c780d14287425ca84c721db843095a26451708a3201e46bc800bad3272aa9"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.3.0/ytcli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bf6cfa56934f70854e3e78ecc6ee52deb924f3c9778489ff3eb544d62fc401b7"
     end
     on_intel do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.2.0/ytcli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d0f0b1710d400feb20ad95b92901e67087198420894bedf55dc394bc2da60500"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v0.3.0/ytcli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "495711fd4476a270fddc2485a5e8a856782e7ce6069211647228bc308ec21994"
     end
   end
 
   def install
-    # The tarball has one top-level directory and Homebrew has already stepped
-    # into it, so the binary is right here. Globbing for `*/ytcli` finds nothing
-    # and fails with a TypeError from deep inside Pathname.
+    # The tarball has one top-level directory and Homebrew has already
+    # stepped into it, so the binary is right here. Globbing for
+    # `*/ytcli` finds nothing and fails inside Pathname.
     bin.install "ytcli"
     doc.install "README.md"
     generate_completions_from_executable(bin/"ytcli", "completions")
