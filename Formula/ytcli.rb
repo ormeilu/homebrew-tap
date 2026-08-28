@@ -27,7 +27,11 @@ class Ytcli < Formula
   end
 
   def install
-    bin.install Dir["*/ytcli"].first => "ytcli"
+    # The tarball has one top-level directory and Homebrew has already stepped
+    # into it, so the binary is right here. Globbing for `*/ytcli` finds nothing
+    # and fails with a TypeError from deep inside Pathname.
+    bin.install "ytcli"
+    doc.install "README.md"
     generate_completions_from_executable(bin/"ytcli", "completions")
   end
 
