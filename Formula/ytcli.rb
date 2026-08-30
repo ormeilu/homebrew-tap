@@ -6,23 +6,23 @@ class Ytcli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.1/ytcli-aarch64-apple-darwin.tar.gz"
-      sha256 "66ef820238d94b522c88c4c3c0a9e5ea23caf58052d61eaceb3c252990fbfbb0"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.2/ytcli-aarch64-apple-darwin.tar.gz"
+      sha256 "ad9132419bb98fdd244279d951ab4208c3823d052e5d6444ae1f629f58d181c7"
     end
     on_intel do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.1/ytcli-x86_64-apple-darwin.tar.gz"
-      sha256 "6c73e3ad237b6419d6962f2ff5c0b968f20f36ed5e7382394e8ff5971687d2ed"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.2/ytcli-x86_64-apple-darwin.tar.gz"
+      sha256 "1477bf29c10b01aaf1dd5e1dbf8d658b031e8477d16a5772d990b6cea9a09315"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.1/ytcli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "77e888bf1d098e290d855d1b234206da5bf6588bb4044754917cd3cb584ee78c"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.2/ytcli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d892aa6d1d8ccbc3dd9b4493aac86208e2fc1f1c22e6cb4529bb8fda20e76ca6"
     end
     on_intel do
-      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.1/ytcli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b2fea62ef3f3da096b4bdafb456388a2dfbc1be84ff2f7536faa6124a76a125b"
+      url "https://github.com/ormeilu/yandex-tracker-cli/releases/download/v1.0.2/ytcli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2b6d135b17f3ad0c72709d186e805808fa179be0085d31023367bd30f9f7625d"
     end
   end
 
